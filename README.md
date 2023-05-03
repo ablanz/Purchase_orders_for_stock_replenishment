@@ -8,7 +8,7 @@ L'architettura del software del codice Python fornito consiste in tre moduli pri
 Il modulo item.py definisce due classi: Discount e Item. La classe Discount rappresenta uno sconto su un articolo e ha attributi come percentage, quantity, value e interval, che ne definiscono le condizioni di applicabilità. La classe Item rappresenta un articolo che può essere ordinato e ha attributi come name, price, stock e delivery_date, implementa inoltre una lista di oggetti Discount che possono essere applicati all'articolo.
 
 Il modulo supplier.py definisce una classe Supplier che rappresenta un fornitore di articoli. La classe Supplier, oltre ad avere un attributo name ha un attributo items, che è una lista di oggetti Item forniti dal fornitore. Definisce anche un metodo search_item_byname che consente di cercare articoli per nome.
-In questo modulo è inoltre presente una classe Combo che ha 3 attributiç item, supplier, quantity
+In questo modulo è inoltre presente una classe Combo che ha 3 attributi: item, supplier, quantity
 
 Il modulo main.py definisce la logica principale dell'applicazione e contiene l'applicazione web Flask. Importa le classi Item, Discount, Supplier e Combo dagli altri moduli e definisce una funzione find_cheapest_supplier che prende il nome di un articolo, la quantità e una lista di oggetti Supplier e restituisce una lista ordinata di oggetti Combo che rappresentano i fornitori più economici per l'articolo e la quantità richiesti. Definisce anche un'applicazione Flask con due percorsi: / per la homepage e /search per gestire le richieste di ricerca.
 
