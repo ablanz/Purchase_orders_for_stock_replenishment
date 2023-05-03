@@ -5,7 +5,7 @@ import unittest
 
 class TestItem(unittest.TestCase):
     def setUp(self):
-        self.item = Item("Test Item", 10.0, datetime.now()+timedelta(days=1), 10)
+        self.item = Item("Test Item", 10.0, datetime.now()+timedelta(days=5), 10)
 
     def test_calculate_total_price_no_discount(self):
         # Test that the total price is correct when there are no discounts
@@ -28,7 +28,7 @@ class TestItem(unittest.TestCase):
         self.assertEqual(total_price, 56.0)
 
     def test_calculate_delivery_days(self):
-        self.assertEqual(self.item.calculate_delivery_days(), 1)    
+        self.assertEqual(self.item.calculate_delivery_days(), 5)    
 
 class TestDiscount(unittest.TestCase):
     def setUp(self):

@@ -3,7 +3,6 @@ from supplier import Supplier, Combo
 from functools import cmp_to_key
 from datetime import datetime, timedelta
 from flask import Flask, jsonify, request, render_template
-import random
 from utils import s1, s2 
 
 
@@ -56,7 +55,7 @@ def search():
                 'supplier': combo.supplier.name,
                 'item': combo.item.name,
                 'price': combo.item.calculate_total_price(combo.quantity),
-                'delivery_days': combo.item.calculate_delivery_days(),
+                'delivery_days': combo.item.calculate_delivery_days()+1,
                 'delivery_date': combo.item.delivery_date.strftime('%Y-%m-%d')
             })
 
@@ -68,4 +67,3 @@ def search():
 
 if __name__ == '__main__':
     app.run(debug=True)
-
