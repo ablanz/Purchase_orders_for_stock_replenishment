@@ -24,6 +24,6 @@ Complessivamente, l'applicazione segue un design semplice e modulare, in cui cia
 Sono inoltre presenti i moduli test_item e test_main_funcs che consentono di adottare un approccio Test Driven
 
 
-Nel mio script ho utilizzato del codice presente nel modulo utils come input ma, visto che le linee guida lo menzionano, penso possa essere utile mostrare come eventualmente strutturerei un database mysql se lo script dovesse gestire più dati:
+Nel mio script ho utilizzato del codice presente nel modulo utils come input ma, visto che le linee guida lo menzionano, penso possa essere utile mostrare come eventualmente strutturerei un database mysql se lo script dovesse gestire più dati o implementare altre funzioni:
 PNG: https://imgur.com/a/PHAJLXo
 LucidCharts: https://lucid.app/lucidchart/08712d31-0f33-4157-9e89-56b8cd1e731/edit?viewport_loc=278%2C-72%2C1496%2C833%2CZkpUJ_WpuzUy&invitationId=inv_ad75c038-51d0-4384-975c-3f2ef7c37463
